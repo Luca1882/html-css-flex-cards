@@ -12,20 +12,67 @@ body{
 
 .team-section{
     text-align: center;
-    padding: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+
 }
 
 .team-section h1{
     color: red;
     margin: 30px;
     font-weight: bold;
+    font-family: Arial, Helvetica, serif;
 }
 
 .team-section p{
-   max-width: 1080px;
-   margin-left: auto;
-   margin-right: auto;
-   padding: 30px;
+   width: 100%;
+   font-size: 22px;
 }
 
 /*SEZIONE FLEX-CARD*/
+
+.team-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    justify-content: space-around;
+    row-gap: 70px;
+}
+
+.team-class{
+    display: flex;
+    background-color: black;
+    width: 500px;
+    height: 150px;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1.2);
+}
+
+.team-info{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+    row-gap: 15px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+
+.team-info h3{
+    font-weight: 800;
+}
+
+.team-info p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.team-info span{
+    color: rgb(67, 67, 238);
+    font-weight: bolder;
+}
+
+.team-class img{
+   height: 100%; 
+   display: block;
+}
